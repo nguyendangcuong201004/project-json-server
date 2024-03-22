@@ -1,0 +1,110 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product-list .item {
+    width: calc((100% / 6 - 10px));
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.product-list .item:hover {
+    transform: scale(1.05   );
+    transition: all 0.3s ease-in-out;
+}
+
+.product-list .item .inner-img img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.product-list .item .inner-wrap {
+    padding: 15px 20px;
+}
+
+.product-list .item .inner-wrap .inner-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product-list .item .inner-wrap .inner-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.product-list .item .inner-wrap .inner-info .inner-price {
+    color: red;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.product-list .item .inner-wrap .inner-info .inner-stock {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.product-list .item .inner-rating {
+    padding: 8px;
+    background-color: #FFA500;
+    display: inline-block;
+    border-radius: 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* danh muc */
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-list .item-category {
+    background-color: #f4be5c;
+    margin: 5px;
+    width: calc((100% / 8) - 10px);
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+}
+
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination .pagination-prev{
+    padding: 10px 20px;
+    background-color: #FFA500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination .pagination-next{
+    padding: 10px 20px;
+    background-color: #FFA500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination .pagination-num {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 20px;
+}
